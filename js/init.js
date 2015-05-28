@@ -69,6 +69,6 @@
 })("docReady", window);
 
 docReady(function(){
-  var tmp = Handlebars.templates['ec-footer'];
-  document.querySelector('.mnv-ec-footer').innerHTML = tmp(ecFooterData);
+  var tmp = Handlebars.templates['ec-masthead'];
+  document.querySelector('.mnv-ec-masthead').innerHTML = tmp(ecMastheadData);
 });

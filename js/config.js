@@ -15,11 +15,11 @@ var ecFooterConfig = {
   }
 },
  "minerva" :{
-  "name": "Footer",
+  "name": "Masthead",
   "ns": {
-    "js": "ecFooter",
-    "css": "ec-footer",
-    "folder": "ec-footer"
+    "js": "ecMasthead",
+    "css": "ec-masthead",
+    "folder": "ec-masthead"
   },
   "description": "",
   "version": "0.1.0",

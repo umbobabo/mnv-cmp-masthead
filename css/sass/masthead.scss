@@ -1,0 +1,106 @@
+$prefix: "mnv-ec-masthead";
+$barHeight: 70px;
+$spacing: 7px;
+
+.#{$prefix} {
+  background: $color-darker-grey;
+  font-family: 'Officina';
+  -webkit-font-smoothing: antialiased;
+  color: $color-white;
+  height: $barHeight;
+  -webkit-font-smoothing: antialiased;
+  @include respond-to('mobile'){
+    height: 48px - ($spacing*2);
+    height: 30px  !important;
+    padding: 0 0 20px !important;
+  }
+  .#{$prefix}-outer-wrap {
+    max-width: 960px;
+    margin: auto;
+    height: $barHeight - ($spacing*2);
+    padding: $spacing 0;
+    background-repeat: no-repeat;
+    background-position: top right;
+    @include respond-to('mobile'){
+      padding: 0 !important;
+    }
+  }
+  .#{$prefix}-wrap {
+    display: table-row;
+    @include respond-to('mobile'){
+      display: inline-block;
+      width: 100%;
+    }
+    height: inherit;
+    > * {
+      display: table-cell;
+      vertical-align: top;
+      font-size: 20px;
+      height: inherit;
+      @include respond-to('mobile'){
+        font-size: 14px;
+      }
+    }
+    .#{$prefix}-logo {
+      width: auto;
+      img {
+        height: $barHeight - ($spacing*2);
+        width: auto;
+      }
+      @include respond-to('mobile'){
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 980px) {
+      .#{$prefix}-logo img {
+        margin-left: 9px;
+      }
+    }
+    h1 {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      width: 100%;
+      padding-left: 10px;
+      text-transform: uppercase;
+      padding-right: 20px;
+      padding-bottom: 9px;
+      font-weight: bold;
+      vertical-align: bottom;
+      height: auto;
+      .#{$prefix}-flytitle {
+        color: $color-grey;
+        margin-left:  10px;
+        position: relative;
+        @media only screen and (max-width: 400px) {
+          display: none;
+        }
+      }
+      @include respond-to('mobile'){
+        font-size: 20px;
+        vertical-align: middle;
+        padding-bottom: 0;
+        letter-spacing: 1px;
+        height: inherit;
+      }
+    }
+    .#{$prefix}-sponsor-label {
+      color: $color-grey;
+      white-space: nowrap;
+      width: auto;
+      font-size: 12px;
+      vertical-align: top;
+      text-align: right;
+      padding-right: 6px;
+      font-weight: bold;
+    }
+    .#{$prefix}-sponsor {
+      img {
+        max-height: $barHeight - ($spacing*2);
+        height: 100%;
+      }
+      @include respond-to('mobile'){
+        padding-right: $spacing;
+      }
+    }
+  }
+}
