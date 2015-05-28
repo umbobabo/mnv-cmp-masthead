@@ -1,15 +1,15 @@
 {
-  "name": "Footer",
+  "name": "Masthead",
   "version": "0.1.4",
   "devDependencies": {
     "handlebars": "~3.0.3",
     "mnv-shared": "*"
   },
-  "homepage": "https://github.com/umbobabo/mnv-cmp-footer",
+  "homepage": "https://github.com/umbobabo/mnv-cmp-masthead",
   "authors": [
     "umbobabo <umbertobabini@economist.com>"
   ],
-  "description": "Basic footer used for The Economist website",
+  "description": "Basic masthead used for The Economist website",
   "main": [
     "./dist/js/init.min.js"
   ],
