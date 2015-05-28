@@ -10,9 +10,8 @@ $spacing: 7px;
   height: $barHeight;
   -webkit-font-smoothing: antialiased;
   @include respond-to('mobile'){
-    height: 48px - ($spacing*2);
-    height: 30px  !important;
-    padding: 0 0 20px !important;
+    height: auto;
+    padding: 0;
   }
   .#{$prefix}-outer-wrap {
     max-width: 960px;
